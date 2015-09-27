@@ -1,0 +1,28 @@
+#startB{
+	width: 20%;
+	height: 10%;
+	background-color: aquamarine;
+	text-align: center;
+	position: relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#answer{
+	position: absolute;
+	top: 300px;
+	margin: 0 30% 0 30%;
+}
+
+.summary-content {
+	position: relative;
+	padding: 0 5% 0 5%;
+	font-size: 20px;
+}
+
+#question {
+	position: relative;
+	margin-top: 25%;
+	padding: 0 5% 0 5%;
+	font-size: 20px;
+}

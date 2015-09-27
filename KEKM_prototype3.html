@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Prototype</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		
+		<link rel="stylesheet" href="prototype_style.css">
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#" id="question">Question</a>
+			</div>
+			  
+			<p id="demo"></p>
+		  </div>
+		</nav>
+		<div id="answer">
+			<button type="button" class="btn btn-success btn-lg answer-button" id="yesB">Yes</button>
+			<button type="button" class="btn btn-danger btn-lg answer-button">No</button>
+		</div>
+		
+		<script>
+			var question = 0;
+			var score = 0;
+			var questions = [];
+			$('#yesB').on('click', function () {
+				$('#demo').html(++score);
+			})
+			
+			
+			var getQ = function(){
+				$('#question').html("Question" + (++question));
+			}
+			
+			$('.answer-button').on('click', function() {
+				getQ();
+			})
+		
+		</script>
+	</body>
+</html>
